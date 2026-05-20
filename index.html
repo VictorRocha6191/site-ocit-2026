@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olimpíada de Ciência de Itapeva (OCIT) - UNESP Itapeva</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="img/unesp-logo-11.png" alt="Logo UNESP" class="logo">
+            <div class="header-text">
+                <h1>Olimpíada de Ciência de Itapeva</h1>
+                <p>Projeto de Extensão - Engenharia de Produção</p>
+            </div>
+            <img src="img/Logo-OCIT-2.png" alt="Logo OCIT" class="logo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="mostrar('sobre')">Sobre</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrar('calendario')">Calendário</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrar('materiais')">Materiais de Estudo</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrar('resultados')">Resultados / Premiados</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrar('comissao')">Comissão Organizadora</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrar('fotos')">Fotos dos Eventos</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrar('contato')">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre" class="conteudo-secao">
+            <div class="destaque-tag">1ª Edição - 2026</div>
+            <h2>Sobre a OCIT</h2>
+            <p>A <strong>1ª Olimpíada Regional de Ciências (OCIT 2026)</strong> é uma iniciativa educacional e científica organizada pela <strong>UNESP Itapeva</strong>. O projeto busca fortalecer a educação científica e identificar jovens talentos nas áreas de Ciências Exatas (Matemática, Física e Química).</p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>✅ Participação Gratuita</strong>
+                    <p>Inscrição gratuita para escolas públicas e privadas da região, limite de 120 alunos na 1ª fase.</p>
+                </div>
+                <div class="info-item">
+                    <strong>🔬 Foco Pedagógico</strong>
+                    <p>Provas baseadas na BNCC, valorizando o raciocínio crítico e a capacidade de argumentação.</p>
+                </div>
+                <div class="info-item">
+                    <strong>🏆 Reconhecimento</strong>
+                    <p>Medalhas de Ouro, Prata e Bronze para os classificados da 2ª fase. Haverá também uma cerimônia de reconhecimento exclusiva para alunos de escolas públicas.</p>
+                </div>
+            </div>
+
+            <div id="fases-container">
+                <h2>Estrutura das Provas</h2>
+                <div class="container-cards">
+                    <div class="card phase">
+                        <span class="step">1ª FASE</span>
+                        <h3>Objetiva</h3>
+                        <p>Até 120 participantes. Questões de múltipla escolha aplicadas na UNESP.</p>
+                    </div>
+                    <div class="card phase">
+                        <span class="step">2ª FASE</span>
+                        <h3>Dissertativa</h3>
+                        <p>Até 40 selecionados. Avaliação escrita de raciocínio e criatividade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-area">
+                <a href="docs/regulamento_ocit_v1.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">
+                    📄 Regulamento Oficial
+                </a>
+                <a href="docs/Guia Rapido_OCIT.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">
+                    📄 Guia Rápido
+                </a>
+                <a href="docs/TCLE.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">
+                    ✍️ Termo de Consentimento (TCLE)
+                </a>
+                <a href="docs/Inscrição Escola.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">
+                    📝 Formulário de Inscrição (Escolas)
+                </a>
+                <a href="docs/Inscrição Aluno.pdf" target="_blank" rel="noopener noreferrer" class="btn-download">
+                    📝 Formulário de Inscrição (Alunos)
+                </a>
+            </div>
+        </section>
+
+        <section id="calendario" class="conteudo-secao" style="display: none;">
+            <h2>Calendário Oficial 2026</h2>
+            <div class="container-branco">
+                <table class="tabela-cronograma">
+                    <thead>
+                        <tr>
+                            <th>Atividade</th>
+                            <th>Período</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Planejamento Geral (Parcerias e Captação de Apoio)</td><td>Janeiro a Abril</td></tr>
+                        <tr><td>Regulamento e Comissão Científica</td><td>Março a Junho</td></tr>
+                        <tr><td>Divulgação e Comunicação</td><td>Maio a Agosto</td></tr>
+                        <tr><td><strong>Período de Inscrições</strong></td><td><strong>Julho a Agosto</strong></td></tr>
+                        <tr><td><strong>Aplicação da Primeira Prova (Correção e Divulgação de Resultados)</strong></td><td><strong>Setembro</strong></td></tr>
+                        <tr><td><strong>Aplicação da Segunda Prova (Correção e Classificação)</strong></td><td><strong>Outubro</strong></td></tr>
+                        <tr><td>Premiação e Evento de Encerramento</td><td>Novembro</td></tr>
+                        <tr><td>Relatório Final e Planejamento Futuro</td><td>Dezembro</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="comissao" class="conteudo-secao" style="display: none;">
+            <h2>Comissão Organizadora</h2>
+            <p>Conheça a equipe de docentes e discentes responsável pela idealização, planejamento e execução da OCIT 2026.</p>
+
+            <h3 class="titulo-sessao-comissao">Equipe Discente</h3>
+            <div class="info-grid">
+
+                <div class="info-item">
+                    <h4 class="subtitulo-area">⚙️ Gestão de Operações e Tecnologia</h4>
+                    <div class="membro">
+                        <img src="img/foto-victor.jpg" alt="Victor" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Victor Thans <br>Rocha</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2021)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-otavio.jpg" alt="Otavio" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Otavio Martins de M. <br>Zacarias</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2023)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-heber.jpg" alt="Heber" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Heber Henrique de O. <br>Pinheiro</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2023)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-lucas.jpg" alt="Lucas" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Lucas Daniel Batista <br>Painço</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2023)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-joaogabriel.jpg" alt="JoaoGabriel" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">João Gabriel M. Costa <br>Pereira</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2024)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4 class="subtitulo-area">🏫 Relações Institucionais e Financeiro</h4>
+                    <div class="membro">
+                        <img src="img/foto-juliana.jpg" alt="Juliana" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Juliana Mariano <br>Cicconi</span>
+                            <small class="descricao">Aluna de Eng. de Produção (2025)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-breno.jpg" alt="Breno" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Breno Lauro <br>Capezzuto</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2025)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-theo.jpg" alt="Theo" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Theo Fernandes <br>Heib</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2025)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-felipe.jpg" alt="Felipe" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Felipe Teixeira <br>Mascarin</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2025)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4 class="subtitulo-area">📱 Comunicação / Marketing e Cerimonial</h4>
+                    <div class="membro">
+                        <img src="img/foto-beatriz.jpg" alt="Beatriz" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Beatriz Cézar de <br>Aquino</span>
+                            <small class="descricao">Aluna de Eng. de Produção (2025)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-maria.jpg" alt="Maria Clara" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Maria Clara Werneck <br>Nunes</span>
+                            <small class="descricao">Aluna de Eng. de Produção (2025)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-romulo.jpg" alt="Romulo" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Romulo Matheus dos S. <br>Kawamura</span>
+                            <small class="descricao">Aluno de Eng. de Produção (2025)</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-joao.jpg" alt="Joao Victor" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">João Victor <br>Leite</span>
+                            <small class="descricao">Aluna de Eng. de Produção (2020)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="titulo-sessao-comissao">Coordenação Docente</h3>
+            <div class="info-grid">
+                <div class="info-item" style="border-left-color: var(--gold);">
+                    <div class="membro">
+                        <img src="img/foto-mickel.jpg" alt="Prof. Mickel" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Prof. Dr. Mickel Abreu de Ponte</span>
+                            <small class="descricao">Coordenador Geral</small>
+                        </div>
+                    </div>
+                    <div class="membro">
+                        <img src="img/foto-marcelo.jpg" alt="Prof. Marcelo" class="foto-perfil">
+                        <div class="texto-membro">
+                            <span class="nome">Prof. Dr. Marcelo Matheus Gauy</span>
+                            <small class="descricao">Coordenador Associado</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resultados" class="conteudo-secao" style="display: none;">
+            <h2>Resultados e Alunos premiados</h2>
+            <p>Em breve, disponível para acesso.</p>
+        </section>
+
+        <section id="materiais" class="conteudo-secao" style="display: none;">
+            <h2>Materiais de Estudo</h2>
+            <p>Prepare-se para a OCIT 2026 utilizando os recursos oficiais e referências das principais olimpíadas científicas do país.</p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>📝 Provas Anteriores <strong>(Disponível após o encerramento da OCIT)</strong></h3>
+                    <p>Acesse os cadernos de questões e gabaritos das edições passadas da OCIT para orientar seus estudos:</p>
+
+                    <h4 class="subtitulo-area">Edição 2026</h4>
+                    <ul class="lista-materiais">
+                        <li><a href="docs/prova_1fase_2026.pdf" target="_blank">📄 1ª Fase (Objetiva) - Caderno de Questões</a></li>
+                        <li><a href="docs/gabarito_1fase_2026.pdf" target="_blank">✅ 1ª Fase - Gabarito Oficial</a></li>
+                        <li><a href="docs/prova_2fase_2026.pdf" target="_blank">📄 2ª Fase (Dissertativa) - Caderno de Questões</a></li>
+                        <li><a href="docs/padrao_resposta_2fase_2026.pdf" target="_blank">✅ 2ª Fase - Padrão de Resposta</a></li>
+                    </ul>
+                </div>
+
+                <div class="info-item">
+                    <h3>📚 Guia de Estudos e Referências</h3>
+                    <p>O nível de dificuldade da OCIT é compatível com as grandes olimpíadas nacionais. Recomendamos a consulta aos bancos de questões destas instituições:</p>
+
+                    <h4 class="subtitulo-area">Ciências Exatas e BNCC</h4>
+                    <ul class="lista-materiais">
+                        <li><a href="https://www.obmep.org.br/" target="_blank">🔢 OBMEP - Matemática</a></li>
+                        <li><a href="https://www1.fisica.org.br/olimpiada/" target="_blank">⚛️ OBF - Física</a></li>
+                        <li><a href="https://obquimica.org/" target="_blank">🧪 OBQ - Química</a></li>
+                        <li><a href="https://onciencias.org/" target="_blank">🔬 ONC - Olimpíada Nacional de Ciências</a></li>
+                        <li><a href="http://basenacionalcomum.mec.gov.br/" target="_blank">📘 Portal da BNCC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="fotos" class="conteudo-secao" style="display: none;">
+            <h2>Fotos sobre os eventos da OCIT</h2>
+            <p>Em breve, disponível para acesso.</p>
+        </section>
+
+        <section id="contato" class="conteudo-secao" style="display: none;">
+            <h2>Contato</h2>
+            <div class="info-item">
+                <strong>📍 Endereço</strong>
+                <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Geraldo+Alckmin,+519+-+Vila+N.+Sra.+de+Fátima,+Itapeva/SP" target="_blank" rel="noopener noreferrer">
+                        Rua Geraldo Alckmin, 519 - Vila N. Sra. de Fátima, Itapeva/SP
+                    </a>
+                </p>
+                <strong>✉️ E-mail</strong>
+                <p>
+                    <a href="mailto:orc.itapeva@unesp.br">orc.itapeva@unesp.br</a>
+                </p>
+                <strong>📸 Instagram</strong>
+                <p>
+                    <a href="https://www.instagram.com/ocit.unesp" target="_blank" rel="noopener noreferrer">@ocit.unesp</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 UNESP Itapeva - Extensão Universitária</p>
+    </footer>
+
+    <script>
+        function mostrar(id) {
+            const secoes = document.querySelectorAll('.conteudo-secao');
+            secoes.forEach(s => s.style.display = 'none');
+            const selecionada = document.getElementById(id);
+            if(selecionada) selecionada.style.display = 'block';
+            window.scrollTo({top: document.querySelector('nav').offsetTop, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
